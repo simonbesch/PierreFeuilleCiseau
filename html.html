@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body onLoad="colorChanger()">
+  <div class="contenairep">
+    <h1>Rock  Paper Cissor</h1>
+    <div id="contenaire">
+      <h3>Rock, paper or cissor ?</h3>
+      <!-- <input id="entervalue" type="text" name="EnterValue" placeholder="Enter rock, paper or cissor"/> -->
+      <select name="EnterValue" id="entervalue">
+      <option value="rock">Rock</option>
+      <option value="paper">Paper</option>
+      <option value="cissor">Cissor</option>
+      </select>
+      <button type="button" name="button" onclick="rpc()" id="buttoncolor">OK</button>
+      <h3>Player do :</h3>
+      <input id="joueur" type="text" name="Joueur" placeholder="" disabled />
+      <h3>Computer do :</h3>
+      <input id="ordi" type="text" name="Ordi" placeholder="" disabled />
+      <h3>The winner is :</h3>
+      <input id="winner" type="text" name="Winner" placeholder="" disabled />
+    </div>
+    <h1>Dice simulator</h1>
+    <h3>How many Dices :</h3>
+    <select name="dicevalue" id="dicevalue">
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5</option>
+    </select>
+    <button type="button" name="buttondice" onclick="dice()" id="buttoncolor2">OK</button>
+    <div id='result' class="result">
+      <!-- <h3>Dice one</h3>
+      <input id="one" type="text" name="one" placeholder="" disabled />
+      <h3>Dice two</h3>
+      <input id="two" type="text" name="two" placeholder="" disabled />
+      <h3>Dice three</h3>
+      <input id="three" type="text" name="three" placeholder="" disabled />
+      <h3>Dice four</h3>
+      <input id="four" type="text" name="four" placeholder="" disabled />
+      <h3>Dice five</h3>
+      <input id="five" type="text" name="five" placeholder="" disabled /> -->
+    </div>
+  </div>
+</body>
+<script src="js.js" charset="utf-8"></script>
+</html>
